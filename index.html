@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Welcome to EventMC, a Minecraft Lifesteal server. Join the community at eventmc.xyz.">
+  <title>EventMC | Make Your Legacy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="EventMC Home">
+      <img src="assets/eventmc-logo.png" alt="EventMC Logo" onerror="this.style.display='none'">
+      <span>EVENT<span class="yellow">MC</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#server">Server</a><a href="#ranks">Ranks</a><a href="#permissions">Permissions</a><a href="staff.html">Staff</a>
+      <a class="nav-discord" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Join Discord ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR NEXT MINECRAFT ADVENTURE</div>
+        <h1>MAKE YOUR<br><span class="yellow">LEGACY.</span></h1>
+        <p class="hero-description">Fight for survival. Build your strength. Make your name. Welcome to the EventMC Lifesteal experience.</p>
+        <div class="hero-ip"><div class="ip-icon">✦</div><div><span class="small-label">JAVA SERVER IP</span><strong id="serverIp">eventmc.xyz</strong></div><button class="copy-button" id="copyIp" type="button">COPY IP</button></div>
+        <div class="hero-actions"><a class="button button-primary" href="#server">Explore Server <span>↓</span></a><a class="button button-outline" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Join Community ↗</a></div>
+        <p class="copy-message" id="copyMessage" aria-live="polite"></p>
+      </div>
+      <div class="hero-visual"><div class="hero-logo-card"><img src="assets/eventmc-logo.png" alt="EventMC Server Logo" onerror="this.style.display='none'"><div class="logo-fallback">EVENT<span>MC</span></div><span class="hero-logo-caption">SURVIVE. FIGHT. CONQUER.</span></div><div class="floating-chip chip-top">⚔ LIFESTEAL</div><div class="floating-chip chip-bottom"><span class="live-dot"></span> COMMUNITY SERVER</div></div>
+    </section>
+    <section class="stats-section section-wrap" id="server">
+      <div class="section-kicker">THE SERVER</div><div class="stats-grid">
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon">♟</span><span class="stat-caption">LIVE STATUS</span></div><div class="stat-number" id="playerCount">--</div><div class="stat-label">Players Online</div><div class="stat-bottom"><span class="status-dot" id="mcStatusDot"></span><span id="mcStatus">Checking server...</span></div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon">◎</span><span class="stat-caption">COMMUNITY</span></div><div class="stat-number" id="discordCount">--</div><div class="stat-label">Discord Members Online</div><div class="stat-bottom"><span class="status-dot status-green"></span><span id="discordStatus">Community connection</span></div></article>
+        <article class="stat-card mode-stat"><div class="stat-top"><span class="stat-icon">⚔</span><span class="stat-caption">GAME MODE</span></div><div class="stat-number mode-number">LIFESTEAL</div><div class="stat-label">Fight to Survive</div><div class="stat-bottom"><span class="status-dot status-yellow"></span><span>Minecraft Multiplayer</span></div></article>
+      </div>
+    </section>
+    <section class="about-section section-wrap"><div class="about-copy"><div class="section-kicker">WELCOME TO EVENTMC</div><h2>NOT JUST A SERVER.<br><span class="yellow">A LEGACY.</span></h2><p>Enter the world of EventMC, where every battle matters. Team up with friends, challenge other players and prove yourself in our Lifesteal community.</p><a class="text-link" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Become part of the community ↗</a></div><div class="feature-list"><article class="feature-card"><div class="feature-icon">⚔</div><div><h3>Competitive PvP</h3><p>Test your skills and take on other players.</p></div></article><article class="feature-card"><div class="feature-icon">♥</div><div><h3>Lifesteal Gameplay</h3><p>Fight smart, survive longer and protect your progress.</p></div></article><article class="feature-card"><div class="feature-icon">◈</div><div><h3>Community First</h3><p>Connect with the community through our Discord server.</p></div></article></div></section>
+    <section class="join-section section-wrap"><div class="section-heading"><div class="section-kicker">GET STARTED</div><h2>JOIN THE <span class="yellow">BATTLE.</span></h2><p>Three simple steps to get into EventMC.</p></div><div class="steps-grid"><article class="step-card"><span class="step-number">01</span><h3>Open Minecraft</h3><p>Launch Minecraft Java Edition and open Multiplayer.</p></article><article class="step-card"><span class="step-number">02</span><h3>Add Server</h3><p>Enter <strong>eventmc.xyz</strong> as the server address.</p></article><article class="step-card"><span class="step-number">03</span><h3>Join EventMC</h3><p>Connect to the server and start your adventure.</p></article></div></section>
+    <section class="ranks-section section-wrap" id="ranks"><div class="section-heading"><div class="section-kicker">UPGRADE YOUR EXPERIENCE</div><h2>EVENTMC <span class="yellow">RANK SHOP</span></h2><p>Choose your rank as seasonal or permanent.</p><div class="rank-note">All kits use custom Protection (P) and Sharpness (S) enchants.</div></div><div class="ranks-grid">
+      <article class="rank-card"><div class="rank-symbol">♜</div><h3>BEAST</h3><div class="rank-enchants">P5 <span>/</span> S5</div><div class="rank-divider"></div><div class="price-row"><span>Seasonal</span><strong>₨1,000</strong></div><div class="price-row"><span>Permanent</span><strong>₨2,500</strong></div><a class="button button-rank" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Enquire on Discord ↗</a></article>
+      <article class="rank-card"><div class="rank-symbol">♞</div><h3>CHAMPION</h3><div class="rank-enchants">P6 <span>/</span> S6</div><div class="rank-divider"></div><div class="price-row"><span>Seasonal</span><strong>₨2,000</strong></div><div class="price-row"><span>Permanent</span><strong>₨3,500</strong></div><a class="button button-rank" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Enquire on Discord ↗</a></article>
+      <article class="rank-card rank-featured"><div class="rank-badge">POPULAR</div><div class="rank-symbol">♛</div><h3>LEGEND</h3><div class="rank-enchants">P7 <span>/</span> S7</div><div class="rank-divider"></div><div class="price-row"><span>Seasonal</span><strong>₨4,000</strong></div><div class="price-row"><span>Permanent</span><strong>₨5,000</strong></div><a class="button button-primary rank-action" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Enquire on Discord ↗</a></article>
+      <article class="rank-card"><div class="rank-symbol">♔</div><h3>GOD</h3><div class="rank-enchants">P9 <span>/</span> S9</div><div class="rank-divider"></div><div class="price-row"><span>Seasonal</span><strong>₨8,000</strong></div><div class="price-row"><span>Permanent</span><strong>₨13,000</strong></div><a class="button button-rank" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Enquire on Discord ↗</a></article>
+      <article class="rank-card custom-rank"><div class="rank-symbol">✦</div><h3>CUSTOM NAME</h3><div class="rank-enchants">P10 <span>/</span> S10</div><div class="rank-divider"></div><div class="price-row"><span>Seasonal</span><strong>₨12,000</strong></div><div class="price-row"><span>Permanent</span><strong>₨17,000</strong></div><a class="button button-rank" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Enquire on Discord ↗</a></article>
+    </div><p class="shop-disclaimer">Prices are listed in PKR. Contact the server team on Discord to confirm availability, payment options and rank details before purchasing.</p></section>
+    <section class="permissions-section section-wrap" id="permissions"><div class="section-heading"><div class="section-kicker">RANK INFORMATION</div><h2>RANK <span class="yellow">ENCHANTMENTS</span></h2><p>Compare the kit enchantment levels offered with each rank.</p></div><div class="table-wrap"><table class="permissions-table"><thead><tr><th>Rank</th><th>Protection</th><th>Sharpness</th><th>Seasonal</th><th>Permanent</th></tr></thead><tbody><tr><td>Beast</td><td>P5</td><td>S5</td><td>₨1,000</td><td>₨2,500</td></tr><tr><td>Champion</td><td>P6</td><td>S6</td><td>₨2,000</td><td>₨3,500</td></tr><tr><td>Legend</td><td>P7</td><td>S7</td><td>₨4,000</td><td>₨5,000</td></tr><tr><td>GOD</td><td>P9</td><td>S9</td><td>₨8,000</td><td>₨13,000</td></tr><tr><td>Custom Name</td><td>P10</td><td>S10</td><td>₨12,000</td><td>₨17,000</td></tr></tbody></table></div><div class="policy-card"><div class="policy-icon">!</div><div><h3>Rank Kit Policy</h3><p>Kits are tied to the purchaser's account only. Sharing, trading, transferring or selling kit items to other players is prohibited. Please contact the staff team if you need clarification.</p></div></div></section>
+    <section class="staff-preview section-wrap" aria-labelledby="staffPreviewTitle">
+      <div class="staff-preview-copy">
+        <div class="section-kicker">THE PEOPLE BEHIND EVENTMC</div>
+        <h2 id="staffPreviewTitle">MEET THE <span class="yellow">TEAM.</span></h2>
+        <p>Get to know the people who help build, manage and support the EventMC community.</p>
+        <a class="button button-primary staff-team-bar" href="staff.html"><span class="staff-team-bar-icon">♟</span> MEET THE STAFF TEAM <span class="staff-team-arrow">↗</span></a>
+      </div>
+      <div class="staff-preview-mark"><span>EM</span><i>EVENTMC STAFF</i></div>
+    </section>
+    <section class="discord-cta section-wrap"><div class="cta-content"><div class="section-kicker">YOUR COMMUNITY IS WAITING</div><h2>READY TO JOIN <span class="yellow">EVENTMC?</span></h2><p>Connect with the community, get server updates and find your next battle.</p><a class="button button-primary" href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Join Our Discord ↗</a></div></section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#home">EVENT<span class="yellow">MC</span></a><p>Make your legacy. One battle at a time.</p><div class="footer-links"><a href="#server">Server</a><a href="#ranks">Ranks</a><a href="staff.html">Staff</a><a href="https://discord.gg/d8NJ4SGXV" target="_blank" rel="noopener noreferrer">Discord ↗</a></div><div class="footer-bottom"><span>© <span id="currentYear"></span> EventMC. All rights reserved.</span><span>Not affiliated with Mojang or Microsoft.</span></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
